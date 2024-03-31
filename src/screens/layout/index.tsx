@@ -1,12 +1,19 @@
+import { useState } from 'react';
 import Menu from "./components/Menu";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 export default function Layout({ children }) {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleMenu = () => {
+        setIsOpen(!isOpen);
+    }
+
     return (
       <div className="flex min-h-screen bg-gray-100">
-        <Menu />
-        <div className="flex flex-1 flex-col">
+        <Menu isOpen={isOpen} handleMenu={handleMenu} />
+        <div className={`flex flex-1 flex-col ${isOpen ? 'ml-64' : 'ml-0'} transition-all duration-300`}>
           <Header />
           <main className="flex-1 p-4 overflow-auto">
             {children}
@@ -15,5 +22,4 @@ export default function Layout({ children }) {
         </div>
       </div>
     );
-  }
-  
+}
