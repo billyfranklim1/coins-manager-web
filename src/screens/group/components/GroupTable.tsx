@@ -52,7 +52,7 @@ const GroupTable = ({ onEditGroup }: { onEditGroup: () => void }) => {
 
   if (isLoading) {
     return (
-      <div className="flex justify-center items-center h-screen w-full bg-gray-100 z-50 absolute top-0 left-0 opacity-75">
+      <div className="flex justify-center items-center h-screen w-full bg-gray-100 z-50 absolute top-0 left-0 opacity-75 dark:bg-gray-800">
         <TailSpin color="#00BFFF" height={80} width={80} />
       </div>
     );
@@ -62,63 +62,63 @@ const GroupTable = ({ onEditGroup }: { onEditGroup: () => void }) => {
     <div className="flex flex-col">
       <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-          <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
-            <table className="min-w-full divide-y divide-gray-200">
-              <thead className="bg-gray-50">
+          <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg dark:bg-gray-800 dark:border-gray-700">
+            <table className="min-w-full divide-y divide-gray-200 dark:bg-gray-800 dark:border-gray-700">
+              <thead className="bg-gray-50 dark:bg-gray-700 ">
                 <tr>
                   <th
                     scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wide dark:text-white dark:hover:text-white"
                   >
                     {t("group.name")}
                   </th>
                   <th
                     scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-white dark:hover:text-white"
                   >
                     {t("group.description")}
                   </th>
                   <th
                     scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-white dark:hover:text-white"
                   >
                     {t("group.coins")}
                   </th>
                   <th
                     scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider dark:text-white dark:hover:text-white"
                   >
                     {t("group.actions")}
                   </th>
                 </tr>
               </thead>
-              <tbody className="bg-white divide-y divide-gray-200">
+              <tbody className="bg-white divide-y divide-gray-200 dark:bg-gray-800 dark:text-white dark:divide-gray-700 dark:hover:bg-gray-700">
                 {groups &&
                   groups.data &&
                   !isLoading &&
                   !isError &&
                   groups.data.map((group) => (
                     <tr key={group.id}>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-white dark:hover:text-white">
                         {group.name}
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-white">
                         {group.description}
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-white">
                         {group.coins.map((coin) => coin.symbol).join(", ")}
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium flex justify-start space-x-2">
+                      <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium flex justify-start space-x-2 dark:text-white">
                         <a
                           href="#"
-                          className="bg-gray-600 text-white px-2 py-1 rounded-md hover:bg-gray-700"
+                          className="bg-gray-600 text-white px-2 py-1 rounded-md hover:bg-gray-700 dark:hover:bg-gray-700 dark:hover:text-white"
                           onClick={() => onEditGroup(group)}
                         >
                           <FaEdit size={13} />
                         </a>
                         <a
                           href="#"
-                          className="bg-gray-600 text-white px-2 py-1 rounded-md hover:bg-gray-700"
+                          className="bg-gray-600 text-white px-2 py-1 rounded-md hover:bg-gray-700 dark:hover:bg-gray-700 dark:hover:text-white"
                           onClick={() => ConfirmDelete(group.id)}
                         >
                           <FaTrash size={13} />
@@ -128,20 +128,18 @@ const GroupTable = ({ onEditGroup }: { onEditGroup: () => void }) => {
                   ))}
               </tbody>
 
-
               {groups && groups.data && groups.data.length === 0 && (
-                <tbody className="bg-white divide-y divide-gray-200">
+                <tbody className="bg-white divide-y divide-gray-200 dark:bg-gray-800 dark:text-white dark:divide-gray-700">
                   <tr>
                     <td
                       colSpan={4}
-                      className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 text-center"
+                      className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 text-center dark:text-white dark:hover:text-white"
                     >
                       {t("group.empty")}
                     </td>
                   </tr>
                 </tbody>
               )}
-
             </table>
           </div>
         </div>
