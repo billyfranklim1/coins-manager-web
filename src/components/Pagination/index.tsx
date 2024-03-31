@@ -6,7 +6,7 @@ const Pagination = ({ data, handleNavigate }) => {
 
   return (
     <nav
-      className="relative z-0 inline-flex rounded-md shadow-sm -space-x-px"
+      className="relative z-0 inline-flex rounded-md shadow-sm -space-x-px mt-4"
       aria-label="Pagination"
     >
       {data.meta.links.map((link, index) => {
@@ -29,8 +29,8 @@ const Pagination = ({ data, handleNavigate }) => {
         }
 
         const isActive = link.active
-          ? "z-10 bg-indigo-50 border-indigo-500 text-indigo-600"
-          : "bg-white border-gray-300 text-gray-500 hover:bg-gray-50";
+          ? "z-10 bg-indigo-50 border-indigo-500 text-indigo-600 dark:bg-indigo-700 dark:text-white dark:border-indigo-500"
+          : "bg-white border-gray-300 text-gray-500 hover:bg-gray-50 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:border-gray-700";
         const isDisabled = !link.url ? "cursor-not-allowed" : "";
 
         return (
