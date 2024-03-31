@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center">Login ReactJs Responsivo</h1>
+  <h1 align="center">Gerenciador de Ativos</h1>
   <div align="center">
    <table>
       <tr>
@@ -20,32 +20,26 @@
 
 ## 🌐 Demonstração
 
-Para uma visualização rápida, acesse a aplicação demo através deste [link](https://react-login-five-chi.vercel.app/). Lembre-se de que esta é uma versão de demonstração que pode não refletir totalmente as funcionalidades do projeto.
 
-Você pode usar as seguintes credenciais para fazer login:
-- **Usuário:** test
-- **Senha:** password
 
 
 
 ## 📘 Sobre o Projeto
 
-Este projeto é uma aplicação web de login responsivo, desenvolvido com React Js e TypeScript. O layout foi criado no Figma e a aplicação foi desenvolvida com base no layout fornecido.
+Este projeto é uma aplicação web de login responsivo, desenvolvido com React Js e TypeScript. "CryptoData Viewer" é uma interface web que interage com a API do "CryptoData Suite", focada em exibir de maneira organizada os nomes das criptomoedas. Ao selecionar um nome de moeda, um modal é apresentado, detalhando informações como ranking, preço e mais, tudo isso obtido dinamicamente via AJAX para uma experiência de usuário fluída e informativa. Inclui também um CRUD para gerenciar grupos de moedas favoritas, permitindo visualizar as moedas de um grupo específico em um modal e oferecendo a opção de remover moedas desse grupo conforme necessário.
 
 # 📚 Funcionalidades
 
-- [x] Login com autenticação integrado com API, o repósitorio da API pode ser encontrado [aqui](https://github.com/billyfranklim1/api-login)
+- [x] Login com autenticação integrado com API, o repósitorio da API pode ser encontrado [aqui](https://github.com/billyfranklim1/coins-manager-web)
 - [x] Responsividade
 - [x] Internacionalização (i18n) com suporte a inglês, português, espanhol e francês
 - [x] Dark Mode
 - [x] Toasts de notificação
 - [x] Animações
-
-## 🎨 Layout
-
-O layout foi cuidadosamente projetado para oferecer uma excelente experiência ao usuário. O layout foi criado no Figma e pode ser acessado através do link abaixo:
-
-- [Acessar Layout no Figma](https://www.figma.com/file/rMJhp5D79wnmq6h7r27cmv/Login---Teste?type=design&node-id=1%3A14027&mode=design&t=a5Gfvwa0lznfNflz-1)
+- [x] Login
+- [x] Cadastro
+- [x] CRUD de grupos
+- [x] Lista de moedas e as cotações de cada uma
 
 ## 💻 Tecnologias e Bibliotecas
 
@@ -74,8 +68,8 @@ Siga estes passos para configurar o projeto localmente:
 1. **Clonar o Repositório:**
 
    ```bash
-   git clone https://github.com/billyfranklim1/react-login.git
-   cd react-login
+   git clone https://github.com/billyfranklim1/coins-manager-web.git
+   cd coins-manager-web
    ```
 
 2. **Instalar Dependências:**
@@ -88,9 +82,7 @@ Siga estes passos para configurar o projeto localmente:
    Renomeie o arquivo `.env.example` para `.env` e ajuste as variáveis conforme necessário.
 
    ```bash
-   NEXT_PUBLIC_API_URL=https://api-login.billy.dev.br
-
-   VITE_REACT_APP_HCAPTCHA_SITE_KEY=your-hcaptcha-site-key
+   NEXT_PUBLIC_API_URL=url-da-api
    ```
 
 4. **Iniciar o Projeto:**
