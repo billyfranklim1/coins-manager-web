@@ -1,0 +1,24 @@
+{
+  "login": {
+    "createAccount" : "Criar Conta",
+    "welcome" : "Boas-vindas!",
+    "welcomeMessage": "Entre utilizando uma das opções abaixo",
+    "username" : "Usuário",
+    "password" : "Senha",
+    "keepMeLoggedIn" : "Mantenha-me conectado",
+    "signIn" : "Entrar",
+    "forgotPassword" : "Esqueceu a senha?",
+    "recoverPassword" : "Recuperar Senha",
+    "or" : "ou",
+    "success" : "Login efetuado com sucesso"
+  },
+  "formValidation": {
+    "usernameRequired" : "Usuário é obrigatório",
+    "passwordRequired" : "Senha é obrigatória",
+    "passwordMinLength" : "Senha deve ter no mínimo 6 caracteres"
+  },
+  "banner": {
+    "button": "Cursos",
+    "title": "Plataforma de cursos completa"
+  }
+}

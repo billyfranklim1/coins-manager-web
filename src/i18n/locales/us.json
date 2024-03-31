@@ -1,0 +1,24 @@
+{
+  "login": {
+    "createAccount" : "Create Account",
+    "welcome" : "Welcome",
+    "welcomeMessage": "Enter using one of the options below",
+    "username" : "Username",
+    "password" : "Password",
+    "keepMeLoggedIn" : "Keep me logged in",
+    "signIn" : "Sign In",
+    "forgotPassword" : "Forgot Password?",
+    "recoverPassword" : "Recover Password",
+    "or" : "or",
+    "success" : "You have successfully logged in"
+  },
+  "formValidation": {
+    "usernameRequired" : "Username is required",
+    "passwordRequired" : "Password is required",
+    "passwordMinLength" : "Password must be at least 6 characters long"
+  },
+  "banner": {
+    "button": "Courses",
+    "title": "Comprehensive Course Platform"
+  }
+}
