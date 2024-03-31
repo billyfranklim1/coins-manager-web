@@ -56,5 +56,6 @@
     "message": "Tem certeza de que deseja excluir este item?",
     "yes": "Sim",
     "no": "Não"
-  }
+  },
+  "footer.rights": "Todos os direitos reservados"
 }

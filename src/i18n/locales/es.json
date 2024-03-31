@@ -56,5 +56,6 @@
     "message": "¿Está seguro de que desea eliminar este elemento?",
     "yes": "Sí",
     "no": "No"
-  }
+  },
+  "footer.rights": "Todos los derechos reservados"
 }
