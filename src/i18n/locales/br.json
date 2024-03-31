@@ -1,24 +1,60 @@
 {
   "login": {
+    "email": "E-mail",
     "createAccount" : "Criar Conta",
-    "welcome" : "Boas-vindas!",
-    "welcomeMessage": "Entre utilizando uma das opções abaixo",
-    "username" : "Usuário",
+    "welcome" : "Bem-vindo",
+    "welcomeMessage": "Entre usando uma das opções abaixo",
+    "username" : "Nome de Usuário",
     "password" : "Senha",
-    "keepMeLoggedIn" : "Mantenha-me conectado",
+    "keepMeLoggedIn" : "Manter-me conectado",
     "signIn" : "Entrar",
-    "forgotPassword" : "Esqueceu a senha?",
+    "forgotPassword" : "Esqueceu a Senha?",
     "recoverPassword" : "Recuperar Senha",
     "or" : "ou",
-    "success" : "Login efetuado com sucesso"
+    "success" : "Você entrou com sucesso"
+  },
+  "register" :{
+    "email" : "E-mail",
+    "name" : "Nome",
+    "password" : "Senha",
+    "confirmPassword" : "Confirmar Senha",
+    "register" : "Registrar",
+    "alreadyHaveAccount" : "Já tem uma conta?",
+    "signUp" : "Inscrever-se",
+    "success" : "Você se registrou com sucesso",
+    "haveAccount" : "Já tem uma conta?",
+    "signIn" : "Entrar",
+    "acceptTerms" : "Eu aceito os termos e condições"
+  },
+  "menu": {
+    "home": "Início",
+    "groups": "Grupos",
+    "logout": "Sair"
+  },
+  "header": {
+    "welcome": "Bem-vindo"
   },
   "formValidation": {
-    "usernameRequired" : "Usuário é obrigatório",
+    "usernameRequired" : "Nome de Usuário é obrigatório",
     "passwordRequired" : "Senha é obrigatória",
-    "passwordMinLength" : "Senha deve ter no mínimo 6 caracteres"
+    "passwordMinLength" : "A senha deve ter pelo menos 6 caracteres"
   },
-  "banner": {
-    "button": "Cursos",
-    "title": "Plataforma de cursos completa"
+  "group": {
+    "title": "Grupos",
+    "empty": "Nenhum grupo encontrado",
+    "add": "Adicionar Grupo",
+    "name": "Nome",
+    "description": "Descrição",
+    "coins": "Moedas",
+    "actions": "Ações",
+    "create": "Criar Grupo",
+    "edit": "Editar Grupo",
+    "delete": "Excluir Grupo"
+  },
+  "confirm": {
+    "title": "Excluir",
+    "message": "Tem certeza de que deseja excluir este item?",
+    "yes": "Sim",
+    "no": "Não"
   }
 }

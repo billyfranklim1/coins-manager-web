@@ -2,8 +2,10 @@ import { useState } from "react";
 import Layout from "../layout";
 import GroupTable from "./components/GroupTable";
 import ModalFormGroup from "./components/ModalFormGroup";
+import { useTranslation } from "react-i18next";
 
 export default function Group() {
+  const { t } = useTranslation();
   const [modalIsOpen, setIsOpen] = useState(false);
   const [editingGroup, setEditingGroup] = useState(null);
 
@@ -16,7 +18,9 @@ export default function Group() {
       <>
         <div className="py-6 sm:px-6 lg:px-8  h-full">
           <div className="flex justify-between items-center">
-            <h1 className="text-xl font-semibold text-gray-900">Groups</h1>
+            <h1 className="text-xl font-semibold text-gray-900">
+              {t("group.title")}
+            </h1>
             <button
               className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 flex items-center justify-center "
               onClick={() => {
@@ -24,7 +28,7 @@ export default function Group() {
                 setIsOpen(true);
               }}
             >
-              Create Group
+              {t("group.add")}
             </button>
           </div>
           <div className="mt-6">

@@ -20,10 +20,7 @@ export default function ModalFormGroup({
   const { t } = useTranslation();
   const {
     createGroupMutation,
-    updateGroupMutation,
     coins,
-    isLoadingCoins,
-    isError,
   } = useGroup();
   const [isLoading, setIsLoading] = useState(false);
   const [selectedOption, setSelectedOption] = useState([]);
@@ -87,7 +84,6 @@ export default function ModalFormGroup({
       }));
       setSelectedOption(selectedCoins);
 
-      // set other fields
       formik.setFieldValue("id", editingGroup.id);
       formik.setFieldValue("name", editingGroup.name);
       formik.setFieldValue("description", editingGroup.description);
@@ -106,10 +102,16 @@ export default function ModalFormGroup({
     );
   };
 
+  const handleCloseModal = () => {
+    setIsOpen(false);
+    formik.resetForm();
+    setSelectedOption([]);
+  }
+
   return (
     <Modal
       isOpen={modalIsOpen}
-      onRequestClose={() => setIsOpen(false)}
+      onRequestClose={() => handleCloseModal()}
       contentLabel={isEditing ? "Edit group" : "Create a new group"}
     >
       <div>
@@ -117,14 +119,14 @@ export default function ModalFormGroup({
           <h1 className="text-2xl font-bold dark:text-white">
             {isEditing ? t("group.edit") : t("group.create")}
           </h1>
-          <button onClick={() => setIsOpen(false)}>
+          <button onClick={() => handleCloseModal()}>
             <MdClose size={20} />
           </button>
         </div>
 
         <form onSubmit={formik.handleSubmit}>
           <div className="mt-3">
-            <label className="block text-gray-400">{t("group.email")}</label>
+            <label className="block text-gray-400">{t("group.name")}</label>
             <div className="mt-2 relative">
               <span className="absolute inset-y-0 left-0 flex items-center pl-3 dark:text-white">
                 <MdPersonOutline size={20} />

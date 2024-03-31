@@ -108,13 +108,7 @@ const GroupTable = ({ onEditGroup }: { onEditGroup: () => void }) => {
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                         {group.coins.map((coin) => coin.symbol).join(", ")}
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium flex justify-end space-x-2">
-                        <a
-                          href="#"
-                          className="bg-gray-600 text-white px-2 py-1 rounded-md hover:bg-gray-700"
-                        >
-                          <FaEye size={13} />
-                        </a>
+                      <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium flex justify-start space-x-2">
                         <a
                           href="#"
                           className="bg-gray-600 text-white px-2 py-1 rounded-md hover:bg-gray-700"
@@ -133,6 +127,21 @@ const GroupTable = ({ onEditGroup }: { onEditGroup: () => void }) => {
                     </tr>
                   ))}
               </tbody>
+
+
+              {groups && groups.data && groups.data.length === 0 && (
+                <tbody className="bg-white divide-y divide-gray-200">
+                  <tr>
+                    <td
+                      colSpan={4}
+                      className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 text-center"
+                    >
+                      {t("group.empty")}
+                    </td>
+                  </tr>
+                </tbody>
+              )}
+
             </table>
           </div>
         </div>

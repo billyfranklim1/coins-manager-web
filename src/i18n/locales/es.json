@@ -1,24 +1,60 @@
 {
   "login": {
-    "createAccount" : "Crear Cuenta",
-    "welcome" : "¡Bienvenido!",
-    "welcomeMessage": "Inicia sesión usando una de las siguientes opciones",
-    "username" : "Usuario",
+    "email": "Correo electrónico",
+    "createAccount" : "Crear cuenta",
+    "welcome" : "Bienvenido",
+    "welcomeMessage": "Ingrese usando una de las opciones a continuación",
+    "username" : "Nombre de usuario",
     "password" : "Contraseña",
     "keepMeLoggedIn" : "Mantenerme conectado",
-    "signIn" : "Iniciar Sesión",
-    "forgotPassword" : "¿Olvidaste la contraseña?",
-    "recoverPassword" : "Recuperar Contraseña",
+    "signIn" : "Iniciar sesión",
+    "forgotPassword" : "¿Olvidó su contraseña?",
+    "recoverPassword" : "Recuperar contraseña",
     "or" : "o",
-    "success" : "¡Has iniciado sesión con éxito!"
+    "success" : "Ha iniciado sesión correctamente"
+  },
+  "register" :{
+    "email" : "Correo electrónico",
+    "name" : "Nombre",
+    "password" : "Contraseña",
+    "confirmPassword" : "Confirmar contraseña",
+    "register" : "Registrarse",
+    "alreadyHaveAccount" : "¿Ya tienes una cuenta?",
+    "signUp" : "Registrarse",
+    "success" : "Se ha registrado correctamente",
+    "haveAccount" : "¿Ya tienes una cuenta?",
+    "signIn" : "Iniciar sesión",
+    "acceptTerms" : "Acepto los términos y condiciones"
+  },
+  "menu": {
+    "home": "Inicio",
+    "groups": "Grupos",
+    "logout": "Cerrar sesión"
+  },
+  "header": {
+    "welcome": "Bienvenido"
   },
   "formValidation": {
-    "usernameRequired" : "Usuario es obligatorio",
-    "passwordRequired" : "Contraseña es obligatoria",
+    "usernameRequired" : "El nombre de usuario es obligatorio",
+    "passwordRequired" : "La contraseña es obligatoria",
     "passwordMinLength" : "La contraseña debe tener al menos 6 caracteres"
   },
-  "banner": {
-    "button": "Cursos",
-    "title": "Plataforma de cursos completa"
+  "group": {
+    "title": "Grupos",
+    "empty": "No se encontraron grupos",
+    "add": "Agregar grupo",
+    "name": "Nombre",
+    "description": "Descripción",
+    "coins": "Monedas",
+    "actions": "Acciones",
+    "create": "Crear grupo",
+    "edit": "Editar grupo",
+    "delete": "Eliminar grupo"
+  },
+  "confirm": {
+    "title": "Eliminar",
+    "message": "¿Está seguro de que desea eliminar este elemento?",
+    "yes": "Sí",
+    "no": "No"
   }
 }

@@ -1,5 +1,6 @@
 {
   "login": {
+    "email": "Email",
     "createAccount" : "Create Account",
     "welcome" : "Welcome",
     "welcomeMessage": "Enter using one of the options below",
@@ -12,13 +13,48 @@
     "or" : "or",
     "success" : "You have successfully logged in"
   },
+  "register" :{
+    "email" : "Email",
+    "name" : "Name",
+    "password" : "Password",
+    "confirmPassword" : "Confirm Password",
+    "register" : "Register",
+    "alreadyHaveAccount" : "Already have an account?",
+    "signUp" : "Sign Up",
+    "success" : "You have successfully registered",
+    "haveAccount" : "Already have an account?",
+    "signIn" : "Sign In",
+    "acceptTerms" : "I accept the terms and conditions"
+  },
+  "menu": {
+    "home": "Home",
+    "groups": "Groups",
+    "logout": "Logout"
+  },
+  "header": {
+    "welcome": "Welcome"
+  },
   "formValidation": {
     "usernameRequired" : "Username is required",
     "passwordRequired" : "Password is required",
     "passwordMinLength" : "Password must be at least 6 characters long"
   },
-  "banner": {
-    "button": "Courses",
-    "title": "Comprehensive Course Platform"
+  "group": {
+    "title": "Groups",
+    "empty": "No groups found",
+    "add": "Add Group",
+    "name": "Name",
+    "description": "Description",
+    "coins": "Coins",
+    "actions": "Action",
+    "create": "Create Group",
+    "edit": "Edit Group",
+    "delete": "Delete Group"
+  },
+  "confirm": {
+    "title": "Delete",
+    "message": "Are you sure you want to delete this item?",
+    "yes": "Yes",
+    "no": "No"
   }
 }

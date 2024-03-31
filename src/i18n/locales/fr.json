@@ -1,24 +1,60 @@
 {
   "login": {
+    "email": "E-mail",
     "createAccount" : "Créer un compte",
-    "welcome" : "Bienvenue !",
+    "welcome" : "Bienvenue",
     "welcomeMessage": "Connectez-vous en utilisant l'une des options ci-dessous",
-    "username" : "Utilisateur",
+    "username" : "Nom d'utilisateur",
     "password" : "Mot de passe",
     "keepMeLoggedIn" : "Rester connecté",
     "signIn" : "Se connecter",
     "forgotPassword" : "Mot de passe oublié ?",
     "recoverPassword" : "Récupérer le mot de passe",
     "or" : "ou",
-    "success" : "Connexion réussie"
+    "success" : "Vous êtes connecté avec succès"
+  },
+  "register" :{
+    "email" : "E-mail",
+    "name" : "Nom",
+    "password" : "Mot de passe",
+    "confirmPassword" : "Confirmer le mot de passe",
+    "register" : "S'inscrire",
+    "alreadyHaveAccount" : "Vous avez déjà un compte ?",
+    "signUp" : "S'inscrire",
+    "success" : "Vous vous êtes inscrit avec succès",
+    "haveAccount" : "Vous avez déjà un compte ?",
+    "signIn" : "Se connecter",
+    "acceptTerms" : "J'accepte les termes et conditions"
+  },
+  "menu": {
+    "home": "Accueil",
+    "groups": "Groupes",
+    "logout": "Se déconnecter"
+  },
+  "header": {
+    "welcome": "Bienvenue"
   },
   "formValidation": {
-    "usernameRequired" : "L'utilisateur est requis",
+    "usernameRequired" : "Le nom d'utilisateur est requis",
     "passwordRequired" : "Le mot de passe est requis",
-    "passwordMinLength" : "Le mot de passe doit contenir au moins 6 caractères"
+    "passwordMinLength" : "Le mot de passe doit comporter au moins 6 caractères"
   },
-  "banner": {
-    "button": "Cours",
-    "title": "Plateforme de cours complète"
+  "group": {
+    "title": "Groupes",
+    "empty": "Aucun groupe trouvé",
+    "add": "Ajouter un groupe",
+    "name": "Nom",
+    "description": "Description",
+    "coins": "Pièces",
+    "actions": "Actions",
+    "create": "Créer un groupe",
+    "edit": "Modifier le groupe",
+    "delete": "Supprimer le groupe"
+  },
+  "confirm": {
+    "title": "Supprimer",
+    "message": "Êtes-vous sûr de vouloir supprimer cet élément ?",
+    "yes": "Oui",
+    "no": "Non"
   }
 }
